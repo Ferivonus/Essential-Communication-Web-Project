@@ -30,7 +30,7 @@ export default {
   <div class="page-wrapper">
     <div class="container">
       <h1>Welcome to the Communication OS</h1>
-      <h1>Welcome ferivonus</h1>
+      <h1>Welcome Ferivonus</h1>
 
       <div class="intro">
         <p>
@@ -44,51 +44,61 @@ export default {
         <p class="quote">{{ currentQuote }}</p>
       </div>
 
-      <div class="navigation-links">
-        <h2>Explore More</h2>
-        <ul>
-          <li>
-            <router-link href="/">
-              Home
-              <p class="link-description">
-                Return to the main page of the Communication OS.
-              </p>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/about">
-              About
-              <p class="link-description">
-                Learn more about the concept and development of this
-                application.
-              </p>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/form">
-              Form
-              <p class="link-description">
-                Access the form page to input and manage various forms.
-              </p>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/messages">
-              Messages
-              <p class="link-description">
-                View and manage messages in the communication system.
-              </p>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/wailing-wall">
-              Wailing Wall
-              <p class="link-description">
-                Contribute and read messages on the virtual wailing wall.
-              </p>
-            </router-link>
-          </li>
-        </ul>
+      <div class="home-page">
+        <div class="navigation-links">
+          <h2>Explore More</h2>
+          <ul>
+            <li>
+              <router-link to="/">
+                Home
+                <p class="link-description">
+                  Return to the main page of the Communication OS.
+                </p>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/about">
+                About
+                <p class="link-description">
+                  Learn more about the concept and development of this
+                  application.
+                </p>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/form">
+                Form
+                <p class="link-description">
+                  Access the form page to input and manage various forms.
+                </p>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/messages">
+                Messages
+                <p class="link-description">
+                  View and manage messages in the communication system.
+                </p>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/wailing-wall">
+                Wailing Wall
+                <p class="link-description">
+                  Contribute and read messages on the virtual wailing wall.
+                </p>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/contact">
+                My Contacts
+                <p class="link-description">
+                  View, add, and update your contacts.
+                </p>
+              </router-link>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 

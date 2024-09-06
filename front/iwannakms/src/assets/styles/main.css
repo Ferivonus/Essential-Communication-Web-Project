@@ -57,31 +57,31 @@
     animation: glitch 1.5s infinite;
   }
 
-  .navigation-links {
+  .home-page .navigation-links {
     margin: 1em 0;
     text-align: center;
   }
 
-  .navigation-links h2 {
+  .home-page .navigation-links h2 {
     font-size: 1.5em;
     margin-bottom: 0.5em;
     color: #ff00ff;
   }
 
-  .navigation-links ul {
+  .home-page .navigation-links ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
 
-  .navigation-links li {
+  .home-page .navigation-links li {
     margin: 0.5em 0.5em;
     position: relative;
     display: inline-block;
     width: 200px;
   }
 
-  .navigation-links a {
+  .home-page .navigation-links a {
     color: #00ff00;
     text-decoration: none;
     font-weight: bold;
@@ -98,7 +98,7 @@
     border: var(--box-border);
   }
 
-  .navigation-links a:hover {
+  .home-page .navigation-links a:hover {
     color: #ff00ff;
     background-color: rgba(0, 0, 0, 0.9);
     text-shadow: 0 0 10px var(--glitch-color);

@@ -1,6 +1,7 @@
 <script>
 import { ref, onMounted } from "vue";
 export default {
+  name: "WailingWallView",
   setup() {
     const wailingWallMessage = ref("");
 
@@ -33,14 +34,6 @@ export default {
 
 <template>
   <div class="wailing-container">
-    <nav>
-      <a href="/">home</a>
-      <a href="/about">about</a>
-      <a href="/form">form</a>
-      <a href="/messages">messages</a>
-      <a href="/wailing-wall">wailing wall</a>
-    </nav>
-
     <h1>Welcome to Wailing wall page!</h1>
     <p>this is the Wailing page.</p>
     <p>{{ wailingWallMessage }}</p>

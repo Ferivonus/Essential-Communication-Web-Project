@@ -34,6 +34,9 @@ export default {
       <li>
         <router-link to="/wailing-wall">wailing wall</router-link>
       </li>
+      <li>
+        <router-link to="/contact">contact</router-link>
+      </li>
     </nav>
     <router-view />
   </div>

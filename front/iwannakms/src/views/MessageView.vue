@@ -1,13 +1,10 @@
 <script>
-import AddContactMyClient from "../components/message_components/AddContactMyClient.vue";
-import AddContactOtherClient from "../components/message_components/AddContactOtherClient.vue";
 import MyServerMessages from "../components/message_components/MyServerMessages.vue";
 import OtherServerMessageServers from "../components/message_components/OtherServerMessageServers.vue";
 
 export default {
+  name: "MessageView",
   components: {
-    AddContactMyClient,
-    AddContactOtherClient,
     MyServerMessages,
     OtherServerMessageServers,
   },
@@ -24,10 +21,6 @@ export default {
           return MyServerMessages;
         case "OtherServerMessageServers":
           return OtherServerMessageServers;
-        case "addContactMyClient":
-          return AddContactMyClient;
-        case "addContactOtherClient":
-          return AddContactOtherClient;
         default:
           return null;
       }
@@ -39,12 +32,6 @@ export default {
     },
     showOtherServerMessageServers() {
       this.selectedView = "OtherServerMessageServers";
-    },
-    showAddContactMyClient() {
-      this.selectedView = "addContactMyClient";
-    },
-    showAddContactOtherClient() {
-      this.selectedView = "addContactOtherClient";
     },
     handleContactSelection(event) {
       this.selectedContact = event.contact;
@@ -61,10 +48,6 @@ export default {
         <button @click="showMyServerMessages">My Server Messages</button>
         <button @click="showOtherServerMessageServers">
           Other Server Messages
-        </button>
-        <button @click="showAddContactMyClient">Add Contact My Client</button>
-        <button @click="showAddContactOtherClient">
-          Add Contact Other Client
         </button>
       </div>
 
